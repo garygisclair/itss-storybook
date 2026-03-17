@@ -4,10 +4,27 @@ import '../src/tokens.css'
 import '../src/stories/stories.css'
 
 const preview: Preview = {
+  initialGlobals: {
+    theme: 'light',
+  },
+  globalTypes: {
+    theme: {
+      description: 'Toggle light/dark mode',
+      toolbar: {
+        title: 'Theme',
+        icon: 'mirror',
+        items: [
+          { value: 'light', title: 'Light', icon: 'sun' },
+          { value: 'dark', title: 'Dark', icon: 'moon' },
+        ],
+        dynamicTitle: true,
+      },
+    },
+  },
   parameters: {
     options: {
       storySort: {
-        order: ['Foundations', 'Components', 'Atoms', 'Hub', 'Hub Page Builder'],
+        order: ['Welcome', 'Foundations', 'Components', 'Atoms', 'Hub', 'Hub Page Builder'],
       },
     },
     controls: {

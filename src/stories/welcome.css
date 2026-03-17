@@ -1,0 +1,148 @@
+/* ── Welcome / About page ─────────────────────────────────────────────── */
+
+.sb-welcome-page {
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sb-welcome-content {
+  flex: 1;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ── Hero ──────────────────────────────────────────────────────────────── */
+
+.sb-welcome-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sb-welcome-eyebrow {
+  margin: 0;
+  color: var(--fg-secondary);
+}
+
+.sb-welcome-title {
+  margin: 0;
+  color: var(--fg-primary);
+}
+
+.sb-welcome-lead {
+  margin: 0;
+  color: var(--fg-secondary);
+}
+
+/* ── Sections ──────────────────────────────────────────────────────────── */
+
+.sb-welcome-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sb-welcome-section__heading {
+  margin: 0;
+  color: var(--fg-primary);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sb-welcome-section__body {
+  margin: 0;
+  color: var(--fg-secondary);
+}
+
+/* ── Stats ─────────────────────────────────────────────────────────────── */
+
+.sb-welcome-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.sb-welcome-stat {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sb-welcome-stat__number {
+  margin: 0;
+  color: var(--fg-primary);
+}
+
+.sb-welcome-stat__label {
+  margin: 0;
+  color: var(--fg-secondary);
+}
+
+/* ── Conventions ───────────────────────────────────────────────────────── */
+
+.sb-welcome-conventions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sb-welcome-convention {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+}
+
+.sb-welcome-convention__title {
+  margin: 0;
+  color: var(--fg-primary);
+}
+
+/* ── Code ──────────────────────────────────────────────────────────────── */
+
+.sb-welcome-code {
+  font-family: monospace;
+  font-size: 12px;
+  background: var(--bg-accent-subtle);
+  color: var(--fg-information);
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+/* ── Progress stepper overrides ────────────────────────────────────────── */
+
+.sb-welcome-section .itss-progress-stepper--vertical .itss-progress-stepper__steps .itss-progress-step {
+  width: auto;
+}
+
+.sb-welcome-section .itss-progress-step--vertical .itss-progress-step__labels {
+  flex: 1;
+  min-width: 0;
+  align-self: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.sb-welcome-section .itss-progress-step--vertical .itss-progress-step__title,
+.sb-welcome-section .itss-progress-step--vertical .itss-progress-step__subtitle {
+  white-space: normal;
+}
+
+.sb-welcome-section .itss-progress-step__title {
+  font-weight: 700;
+}
