@@ -1,0 +1,114 @@
+/* Shared story layout styles */
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--bg-secondary);
+  color: var(--fg-primary);
+}
+
+/* ── Page wrapper ─────────────────────────────────────────── */
+
+.preview-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+.preview-page--flex {
+  max-width: unset;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-page--fullscreen {
+  max-width: unset;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.preview-page--fullscreen .preview-header {
+  display: none;
+}
+
+.preview-page.preview-page--fullscreen > div {
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid var(--border-subtle);
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+
+.preview-header {
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 24px;
+}
+
+.preview-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--fg-primary);
+  letter-spacing: -0.01em;
+}
+
+.preview-header p {
+  font-size: 13px;
+  color: var(--fg-secondary);
+  margin: 0;
+  font-family: monospace;
+}
+
+/* ── 12-column grid layout ────────────────────────────────── */
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 24px;
+  align-content: start;
+}
+
+@media (min-width: 768px) {
+  .hub-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hub-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* ── Sections ─────────────────────────────────────────────── */
+
+.preview-section {
+  margin-bottom: 48px;
+}
+
+.preview-section__title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-secondary);
+  margin: 0 0 16px;
+}
+
+.preview-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.preview-label {
+  font-size: 11px;
+  color: var(--fg-secondary);
+  margin-bottom: 8px;
+}
